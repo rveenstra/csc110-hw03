@@ -65,9 +65,11 @@ def pick_averaging_method():
         return avg
     elif pick == 'c':
         avg = statistics.mode(grades)
+        print("picked: Mode")
         return avg
     else:
-        print("Error in pick_averaging_method: incorrect option picked")
+        print("Error in pick_averaging_method: incorrect option picked.")
+        exit()
     
 
 # Task 3:
